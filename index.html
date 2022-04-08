@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>KhazanayGB</title>
+</head>
+
+<body>
+    <div id="siteintro">
+        <div id="logo">
+            <h1>KhazanayGB</h1>
+        </div>
+        <div id="contact">
+            <div class="contactbox v-flex">
+                <img src="image/socail/whatsapp.png" alt="Whatsapp">
+                <p>+923109109988</p>
+            </div>
+            <div class="contactbox v-flex">
+                <img src="image/socail/phone.png" alt="Phone">
+                <p>+923109109988</p>
+            </div>
+            <div class="contactbox v-flex">
+                <img src="image/socail/gmail icon.png" alt="Gmail">
+                <p>Email@email.com</p>
+            </div>
+            <!-- <div class="contactbox v-flex">
+                <img src="image/socail/www.png" alt="">
+                <p>contact_us</p>
+            </div> -->
+        </div>
+    </div>
+    <div class="sm-navagation">
+        <div class="sm-nav">
+            <div id="show-sm-nav">
+                <button onclick="showsmnav()">
+                    <img src="image/nav/sm-nav.png" alt="small navagation icon" style="height: 30px;">
+                </button>
+            </div>
+            <div id="searchin">
+                <form action="#" method="post">
+                    <input type="text" name="searchin" id="searchin" placeholder="what are you looking for">
+                </form>
+            </div>
+            <div id="sm-notify" class="flex ">
+                <div id="logtab" class="v-flex">
+                    <button class="log-btn">Welcome! Guest</button>
+                    <button class="log-btn">LogIn</button>
+                </div>
+                <div id="cart-and-not" class="v-flex">
+                    <div id="notification">
+                        <a href=""><img src="image/notification.png" width="28px" alt="Notification" class="mx-20"></a>
+                    </div>
+                    <a href=""><img src="image/cart00.png " width="28px" alt="Cart"></a>
+                </div>
+            </div>
+        </div>
+        <div class="navitem" id="sm-nav-menu">
+            <ul>
+                <li><a href="index.html" class="v-flex"><img src="image/nav/home.jpg" alt="Home" class="responced"> Home</a></li>
+                <hr>
+                <li class="position-relative"><a href="#" class="v-flex" onclick="dropdown()"><img src="image/nav/product.png" alt="Product" class="responced">product</a>
+                <ul class="dropdown" id="dropeddown">
+                    <hr>
+                    <li> <a href="product/gem-stone-and-mineral.html"> Gemstone & Minerals</a></li>
+                    <hr>
+                    <li> <a href="product/herbal-product.html"> Herbal product</a></li>
+                    <hr>
+                    <li> <a href="product/dry-fruits.html">Dry Fruits</a> </li>
+                    <hr>
+                    <li> <a href="product/vintage.html">Vintage</a> </li>
+                </ul>
+                </li>
+                <hr>
+                <li><a href="services.html" class="v-flex"><img src="image/nav/services.png" alt="Services" class="responced">services</a></li>
+                <hr>
+                <li><a href="about-us.html" class="v-flex"><img src="image/nav/about us.png" alt="About us" class="responced"> about us</a></li>
+                <hr>
+                <li><a href="contact-us.html" class="v-flex"><img src="image/nav/contact-us.jpg" alt="Contact us" class="responced">contact us</a></li>
+                <hr>
+                <li><a href="blog.html" class="v-flex"><img src="image/nav/blogs.png" alt="Contact us" class="responced"> Blogs</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="lg-navagation">
+        <div class="navitem">
+            <ul class="flex">
+                <li><a href="index.html" class="activepage"> Home</a></li>
+                <li class="position-relative"><a href="#" onclick="lgdropdown()">product</a>
+                <ul class="dropdown" id="lg-dropdown">
+                    <li> <a href="product/gem-stone-and-mineral.html"> Gemstone & Minerals</a></li>
+                    <hr>
+                    <li> <a href="product/herbal-product.html"> Herbal product</a></li>
+                    <hr>
+                    <li> <a href="product/dry-fruits.html">Dry Fruits</a> </li>
+                    <hr>
+                    <li> <a href="product/vintage.html">Vintage</a> </li>
+                </ul>
+                </li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="about-us.html"> about us</a></li>
+                <li><a href="contact-us.html">contact us</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+            </ul>
+        </div>
+        <div id="searchin">
+            <form action="#" method="post">
+                <input type="text" name="searchin" id="searchin" placeholder="what are you looking for">
+            </form>
+        </div>
+        <div id="inline-notify" class="v-flex">
+            <div id="logtab" class="v-flex">
+                <button class="log-btn">Welcome! Guest</button>
+                <button class="log-btn">LogIn</button>
+            </div>
+            <div id="cart-and-not" class="v-flex">
+                <div id="notification">
+                    <a href="" class="shownoti"><img src="image/notification.png" width="28px" alt="Notification" class="mx-20"></a>
+                    <div id="notification-detail" class="notify-box">
+                        <h4 class="text-center my-10">You Have No Notification</h4>
+                        <small class="mxy-10 ">Please Log in to see detail notification</small>
+                    </div>
+                </div>
+                <div id="cart" class="position-relative">
+                    <a href="" class="showcart"><img src="image/cart00.png " width="28px" alt="Cart"></a>
+                    <div id="cart-detail" class="notify-box">
+                        <h4 class="text-center my-10">You Have No Order in Cart</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="log-cart-not" class="notify">
+        <div id="logtab" class="v-flex">
+            <button class="log-btn">Welcome! Guest</button>
+            <button class="log-btn">LogIn</button>
+        </div>
+        <div id="cart-and-not" class="v-flex">
+            <div id="notification">
+                <a href=""><img src="image/notification.png" width="28px" alt="Notification" class="mx-20"></a>
+            </div>
+            <a href=""><img src="image/cart00.png " width="28px" alt="Cart"></a>
+        </div>
+    </div>
+   
+
+    <div class="social-link">
+        <ul>
+            <li><a href=""><img src="image/socail/facebook.png" alt="facebook social-link" class="socail-image-size"></a></li>
+            <li><a href=""><img src="image/socail/twitter.png" alt="twitter social-link" class="socail-image-size"></a></li>
+            <li><a href=""><img src="image/socail/linkedin.png" alt="linkedin social-link" class="socail-image-size"></a></li>
+            <li><a href=""><img src="image/socail/insta.png" alt="instagram social-link" class="socail-image-size"></a></li>
+            <li><a href=""><img src="image/socail/youtube.png" alt="youtube social-link" class="socail-image-size"></a></li>
+        </ul>
+    </div>
+    
+    <div class="mb-20 its-slider">
+        <div class="slideshow-container ">
+
+            <div class="mySlides fade">
+                <img src="image/slider/dryfruit.jpg">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="image/slider/herbal.jpeg">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="image/slider/gemstone.jpg">
+            </div>
+        </div>    
+        <br>
+
+        <div id="dotted">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+    </div>
+
+    <div id="wrapper" class="mb-40">
+        <div id="myproduct" class="mb-40">
+            <h2 class="text-center py-10 fnt-success">PRODUCT CATEGORY</h2>
+            <div class="v-flex">
+                <div class="productbox">
+                    <h3 class="text-center my-10 fnt-cap">Gemstone & Minerals</h3>
+                    <img src="image/product/gemsstone.jpg" alt="Gemstone & Minerals" class="my-5 prodimgsize">
+                    <p class="mxy-10 text-center">A remarkable variety of gemstones Precious& Semi-precious
+                        Gemstone occur in Gilgit Baltistan</p>
+                    <a href="product/gem-stone-and-mineral.html" class="btn my-10 align-center">View Detail</a>
+                </div>
+                <div class="productbox">
+                    <h3 class="text-center my-10 fnt-cap">herbal product </h3>
+                    <img src="image/product/herbal.jpg" alt="herbal product" class="my-5 prodimgsize">
+                    <p class="mxy-10 text-center">Our high altitude herbal medicine & dietary supplement
+                        Product our Himalayan range of Gilgit Baltistan</p>
+                    <a href="product/herbal-product.html" class="btn my-10 align-center">View Detail</a>
+                </div>
+                <div class="productbox">
+                    <h3 class="text-center my-10 fnt-cap">dry fruits</h3>
+                    <img src="image/product/dryfriut1.jpg" alt="dry fruits" class="my-5 prodimgsize">
+                    <p class="mxy-10 text-center">Buy Best Quality Gilgit Baltistan's Dry Fruits from
+                        Khazanaygb.com One of the best Online selling Store from Gilgit Baltistan</p>
+                    <a href="product/dry-fruits.html" class="btn my-10 align-center">View Detail</a>
+                </div>
+                <div class="productbox">
+                    <h3 class="text-center my-10 fnt-cap">Vintage</h3>
+                    <img src="image/product/vintage.jpg" alt="Vintage" class="my-5 prodimgsize">
+                    <p class="mxy-10 text-center">Vintage Gilgit Baltistan ::: Old is Gold ::: ... Most of
+                        Antique Collection pictures and the items are from my own collections.</p>
+                    <a href="product/vintage.html" class="btn my-10 align-center">View Detail</a>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div id="demandproduct" class="mb-40">
+            <h2 class="text-center py-10 fnt-success">MOST DEMAND PRODUCT</h2>
+            <div  id="scrol-horzental" class="lrslider">
+        
+                <div class="demand-product">
+                    <div class="strick">
+                        <img src="image/product/gemsstone.jpg" alt="Gemstone & Minerals" class="my-5 prodimgsize">
+                        <h4 class="text-center  fnt-cap">Product Name</h4>
+                        <p class="text-center my-5">Price $4</p>
+                        <div class="v-flex">
+                            <a href="gem-stone-and-mineral.html" class="btn mxy-4 fnt-14">Order Now</a>
+                            <a href="gem-stone-and-mineral.html" class="btn mxy-4 fnt-14">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+        
+
+
+                <div class="demand-product">
+                    <div class="strick">
+                        <img src="image/product/herbal.jpg" alt="herbal product" class="my-5 prodimgsize">
+                        <h4 class="text-center  fnt-cap">Product Name </h4>
+                        <p class="text-center my-5">Price $4</p>
+                        <div class="v-flex">
+                            <a href="herbal-product.html" class="btn mxy-4 fnt-14">Order Now</a>
+                            <a href="herbal-product.html" class="btn mxy-4 fnt-14">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+        
+
+                <div class="demand-product">
+                    <div class="strick">
+                        <img src="image/product/dryfriut1.jpg" alt="dry fruits" class="my-5 prodimgsize">
+                        <h4  class="text-center fnt-cap">Product Name</h4>
+                        <p class="text-center my-5">Price $4</p>
+                        <div class="v-flex">
+                            <a href="dry-fruits.html" class="btn mxy-4 fnt-14">Order Now</a>
+                            <a href="dry-fruits.html" class="btn mxy-4 fnt-14">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+            
+
+        
+                <div class="demand-product">
+                    <div class="strick">
+                        <img src="image/product/vintage.jpg" alt="Vintage" class="my-5 prodimgsize">
+                        <h4  class="text-center fnt-cap">Product Name</h4>
+                        <p class="text-center my-5">Price $4</p>
+                        <div class="v-flex">
+                            <a href="vintage.html" class="btn mxy-4 fnt-14">Order Now</a>
+                            <a href="vintage.html" class="btn mxy-4 fnt-14">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+                <div class="demand-product">
+                    <div class="strick">
+                        <img src="image/product/vintage.jpg" alt="Vintage" class="my-5 prodimgsize">
+                        <h4  class="text-center fnt-cap">Product Name</h4>
+                        <p class="text-center my-5">Price $4</p>
+                        <div class="v-flex">
+                            <a href="vintage.html" class="btn mxy-4 fnt-14">Order Now</a>
+                            <a href="vintage.html" class="btn mxy-4 fnt-14">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+        
+
+            
+                <div class="demand-product">
+                    <div class="strick">
+                        <img src="image/product/vintage.jpg" alt="Vintage" class="my-5 prodimgsize">
+                        <h4  class="text-center fnt-cap">Product Name</h4>
+                        <p class="text-center my-5">Price $4</p>
+                        <div class="v-flex">
+                            <a href="vintage.html" class="btn mxy-4 fnt-14">Order Now</a>
+                            <a href="vintage.html" class="btn mxy-4 fnt-14">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+    
+
+        
+                <div class="demand-product">
+                    <div class="strick">
+                        <img src="image/product/vintage.jpg" alt="Vintage" class="my-5 prodimgsize">
+                        <h4  class="text-center fnt-cap">Product Name</h4>
+                        <p class="text-center my-5">Price $4</p>
+                        <div class="v-flex">
+                            <a href="vintage.html" class="btn mxy-4 fnt-14">Order Now</a>
+                            <a href="vintage.html" class="btn mxy-4 fnt-14">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+
+        <div id="ourpartner"  class="mtb-100">
+            <h2 class="text-center py-10 fnt-dark white-shadow">OUR WORKING PARTNERS</h2>
+            <div class="v-flex partner-container">
+                <div class="partner partstyle"><img src="image/partners/partner1.png" alt="our oartners 1"></div>
+                <div class="partner partstyle"><img src="image/partners/partner2.png" alt="our oartners 2"></div>
+                <div class="partner partstyle"><img src="image/partners/partner3.png" alt="our oartners 3"></div>
+                <div class="partner partstyle"><img src="image/partners/parnter4.png" alt="our oartners 4"></div>
+                <div class="partner partstyle"><img src="image/partners/parnter5.png" alt="our oartners 5"></div>
+            </div>
+        </div>
+
+        <div id="client-review" class="mtb-100 py-10">
+            <h2 class="text-center  fnt-success py-10">OUR HAPPY CLIENTS</h2> 
+            <div class="clients v-flex autoplay">
+                <div class="stricksize">
+                    <div class="happayclient">
+                        <img src="image/partners/comment.png" alt="client comments" class="client-comment">
+                        <img src="image/partners/dr.jpeg" alt="client-name " class="align-center client-dp">
+                        <p class="client-name px-10"><b>Robert Downey Jr. </b></p>
+                        <p class="comment  px-10 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, iure!"</p>
+                    </div>
+                </div>
+                <div class="stricksize">
+                    <div class="happayclient">
+                        <img src="image/partners/comment.png" alt="client comments" class="client-comment">
+                        <img src="image/partners/dr.jpeg" alt="client-name "  class="align-center client-dp">
+                        <p class="client-name px-10"><b>Robert Downey Jr. </b></p>
+                        <p class="comment  px-10 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, iure!"</p>
+                    </div>
+                </div>
+                <div class="stricksize">
+                    <div class="happayclient">
+                        <img src="image/partners/comment.png" alt="client comments" class="client-comment">
+                        <img src="image/partners/dr.jpeg" alt="client-name "  class="align-center client-dp">
+                        <p class="client-name px-10"><b>Robert Downey Jr. </b></p>
+                        <p class="comment  px-10 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, iure!"</p>
+                    </div>
+                </div>
+                <div class="stricksize">
+                    <div class="happayclient">
+                        <img src="image/partners/comment.png" alt="client comments" class="client-comment">
+                        <img src="image/partners/dr.jpeg" alt="client-name "  class="align-center client-dp">
+                        <p class="client-name px-10"><b>Robert Downey Jr. </b></p>
+                        <p class="comment  px-10 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, iure!"</p>
+                    </div>
+                </div>
+                <div class="stricksize">
+                    <div class="happayclient">
+                        <img src="image/partners/comment.png" alt="client comments" class="client-comment">
+                        <img src="image/partners/dr.jpeg" alt="client-name "  class="align-center client-dp">
+                        <p class="client-name px-10"><b>Robert Downey Jr. </b></p>
+                        <p class="comment  px-10 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, iure!"</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div id="massage-box">
+        <div id="messagehead">
+            <div class="flex">
+                <img src="image/message.png" width="35px"alt="Talk us">
+                <p class="mx-10">Message Us</p>
+            </div>
+            <div class="flex">
+                <label onclick="openmessage()" title="Maximize message"><img src="image/openmsg.png" alt="Open massage-box"></label>
+                <label onclick="closemessage()" title="Minimize message"><img src="image/closemsg.png" alt="Close massage-box"></label>
+            </div>
+        </div>
+        <div id="message">
+
+        </div>
+    </div>
+    
+
+    <div id="footer">
+        <p class="text-center"> &copy; Copyright 2022, All right reserved to KhazanayGB.com</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="javascript/java.js"></script>
+</body>
+
+</html>

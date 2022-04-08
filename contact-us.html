@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact Us  ||  KhazanayGB</title>
+</head>
+
+<body>
+    <div id="siteintro">
+        <div id="logo">
+            <h1>KhazanayGB</h1>
+        </div>
+        <div id="contact">
+            <div class="contactbox v-flex">
+                <img src="image/socail/whatsapp.png" alt="Whatsapp">
+                <p>+923109109988</p>
+            </div>
+            <div class="contactbox v-flex">
+                <img src="image/socail/phone.png" alt="Phone">
+                <p>+923109109988</p>
+            </div>
+            <div class="contactbox v-flex">
+                <img src="image/socail/gmail icon.png" alt="Gmail">
+                <p>Email@email.com</p>
+            </div>
+            <!-- <div class="contactbox v-flex">
+                <img src="image/socail/www.png" alt="">
+                <p>contact_us</p>
+            </div> -->
+        </div>
+    </div>
+    <div class="sm-navagation">
+        <div class="sm-nav">
+            <div id="show-sm-nav">
+                <button onclick="showsmnav()">
+                    <img src="image/nav/sm-nav.png" alt="small navagation icon" style="height: 30px;">
+                </button>
+            </div>
+            <div id="searchin">
+                <form action="#" method="post">
+                    <input type="text" name="searchin" id="searchin" placeholder="what are you looking for">
+                </form>
+            </div>
+        </div>
+        <div class="navitem" id="sm-nav-menu">
+            <ul>
+                <li><a href="index.html" class="v-flex"><img src="image/nav/home.jpg" alt="Home" class="responced"> Home</a></li>
+                <hr>
+                <li class="position-relative"><a href="#" class="v-flex" onclick="dropdown()"><img src="image/nav/product.png" alt="Product" class="responced">product</a>
+                <ul class="dropdown" id="dropeddown">
+                    <hr>
+                    <li> <a href="product/gem-stone-and-mineral.html"> Gemstone & Minerals</a></li>
+                    <hr>
+                    <li> <a href="product/herbal-product.html"> Herbal product</a></li>
+                    <hr>
+                    <li> <a href="product/dry-fruits.html">Dry Fruits</a> </li>
+                    <hr>
+                    <li> <a href="product/vintage.html">Vintage</a> </li>
+                </ul>
+                </li>
+                <hr>
+                <li><a href="#" class="v-flex"><img src="image/nav/services.png" alt="Services" class="responced">services</a></li>
+                <hr>
+                <li><a href="" class="v-flex"><img src="image/nav/about us.png" alt="About us" class="responced"> about us</a></li>
+                <hr>
+                <li><a href="contact-us.html" class="v-flex"><img src="image/nav/contact-us.jpg" alt="Contact us" class="responced">contact us</a></li>
+                <hr>
+                <li><a href="#" class="v-flex"><img src="image/nav/blogs.png" alt="Contact us" class="responced"> Blogs</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="lg-navagation">
+        <div class="navitem">
+            <ul class="flex">
+                <li><a href="index.html" class="v-flex activepage"><img src="image/nav/home.jpg" alt="Home" class="responced"> Home</a></li>
+                <li class="position-relative"><a href="#" class="v-flex" onclick="lgdropdown()"><img src="image/nav/product.png" alt="Product" class="responced">product</a>
+                <ul class="dropdown" id="lg-dropdown">
+                    <li> <a href="product/gem-stone-and-mineral.html"> Gemstone & Minerals</a></li>
+                    <hr>
+                    <li> <a href="product/herbal-product.html"> Herbal product</a></li>
+                    <hr>
+                    <li> <a href="product/dry-fruits.html">Dry Fruits</a> </li>
+                    <hr>
+                    <li> <a href="product/vintage.html">Vintage</a> </li>
+                </ul>
+                </li>
+                <li><a href="#" class="v-flex"><img src="image/nav/services.png" alt="Services" class="responced">services</a></li>
+                <li><a href="about-us.html" class="v-flex"><img src="image/nav/about us.png" alt="About us" class="responced"> about us</a></li>
+                <li><a href="contact-us.html" class="v-flex"><img src="image/nav/contact-us.jpg" alt="Contact us" class="responced">contact us</a></li>
+                <li><a href="#" class="v-flex"><img src="image/nav/blogs.png" alt="our blogs" class="responced"> Blogs</a></li>
+            </ul>
+        </div>
+        <div id="searchin">
+            <form action="#" method="post">
+                <input type="text" name="searchin" id="searchin" placeholder="what are you looking for">
+            </form>
+        </div>
+    </div>
+  
+    
+    <div class="contact-us-bg">
+        <div class="con-social">
+            <ul>
+                <li><a href=""><img src="image/socail/facebook.png" alt="facebook social-link" class="socail-image-size"></a></li>
+                <li><a href=""><img src="image/socail/twitter.png" alt="twitter social-link" class="socail-image-size"></a></li>
+                <li><a href=""><img src="image/socail/linkedin.png" alt="linkedin social-link" class="socail-image-size"></a></li>
+                <li><a href=""><img src="image/socail/insta.png" alt="instagram social-link" class="socail-image-size"></a></li>
+                <li><a href=""><img src="image/socail/youtube.png" alt="youtube social-link" class="socail-image-size"></a></li>
+            </ul>
+        </div>
+        <img src="image/socail/contact-us.png" alt="contact-us background" class="fixed-image">
+    </div>
+
+    <div id="wrapper" class="">
+        <div class="mtb-100 v-flex contact-form-address">
+            <div class="contact-us-form">
+                <h2 class="my-10">Get in touch</h2>
+                <div class="uderline"></div>
+                <p class="my-10">Be part of our communtiy member, For any query or concern please leave a message</p>
+                <form action="" method="post">
+                    <input type="text" name="name" id="user-name" placeholder="Full Name *" required>
+                    <input type="email" name="email" id="user-email" placeholder="E-mail *" required>
+                    <input type="tel" name="phone" id="user-phone" placeholder="Contact number">
+                    <textarea name="message" id="user-message" cols="30" rows="10" placeholder="Message *" required></textarea>
+                    <input type="submit" value="Send Message" class="btn align-center">
+                </form>     
+            </div>
+            <div class="address ">
+                    <div class="v-flex my-10">
+                        <img src="image/socail/whatsapp.png" alt="Whatsapp" class="cont-image mx-10">
+                        <p>+923109109988</p>
+                    </div>
+                    <div class="v-flex my-10">
+                        <img src="image/socail/phone.png" alt="Phone" class="cont-image mx-10">
+                        <p>+923109109988</p>
+                    </div>
+                    <div class="v-flex my-10">
+                        <img src="image/socail/gmail icon.png" alt="Gmail" class="cont-image mx-10">
+                        <p>Email@email.com</p>
+                    </div>
+                    <!-- <div class="contactbox v-flex">
+                        <img src="image/socail/www.png" alt="">
+                        <p>contact_us</p>
+                    </div> -->
+                    <div class="pxy-50 v-flex location">
+                        <img src="image/pngwing.com.png" alt="location">
+                        <p>KhazanayGB traders.pto Gilgit Pakistan 172/p mahendi road, KhazanayGB Tower, kkhinger Gilgit</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p class="text-center"> &copy; Copyright 2022, All right reserved to KhazanayGB.com</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="javascript/java.js"></script>
+</body>
+
+</html>
